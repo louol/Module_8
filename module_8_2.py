@@ -12,9 +12,7 @@ def personal_sum(numbers):
 def calculate_average(numbers):
     try:
         summ,incorrect_data = personal_sum(numbers)
-
         return summ / (len(numbers) - incorrect_data)
-
     except ZeroDivisionError:
         return 0
     except TypeError:
